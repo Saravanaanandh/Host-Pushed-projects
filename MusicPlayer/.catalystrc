@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "9057000000008029",
+      "name": "musicplayer",
+      "domain": {
+        "id": "50021611410",
+        "name": "musicplayer-60031376288.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60031376288",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

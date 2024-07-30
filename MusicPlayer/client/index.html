@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="music_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="top-part">
+            <i class="fa-solid fa-caret-down"></i>
+            <span>Now playing</span>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="img-name-artist">
+            <img src=" music/song_img_4.jpg">
+            <h2>Song Name</h2>
+            <h4>Artist Name</h4>
+        </div>
+       
+        <div class="song-detail">
+            <div class="song-tracker">
+                <div class="track-line">
+                    <span class="tracking"></span>
+                </div>
+                <audio id="mainaudio" src=" music/song_4.mp3"></audio>
+                <div class="timer">
+                    <span class="start">0:00</span>
+                    <span class="end">5:20</span>
+                </div>
+            </div>
+            <div class="controls">
+                <span id="typebtn"><img src=" repeatone.png" class="repeatone" title="repeat one"></span>
+                <span id="prev"><i class="fa-solid fa-backward"></i></span>
+                <span id="pause"><i class="fa-solid fa-play"></i></span>
+                <span id="next"><i class="fa-solid fa-forward"></i></span>
+                <span id="musiclisticon"><img src=" playlist.png" alt=""></span>
+            </div>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <i class="fa-solid fa-music"></i>
+                <span>Music List</span>
+                <i id="closebtn" class="fa fa-times"></i>
+            </div>
+            <ul class="musics"> </ul> 
+        </div>
+    </div>
+    <script src="music_list.js"></script>
+    <script src="music.js"></script>
+</body>
+</html>
